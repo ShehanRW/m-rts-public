@@ -169,11 +169,14 @@ public class CharacterManager : MonoBehaviour {
 		bombLoadingBar.GetComponent<Image>().fillAmount = bombProgress;
 		
 		//set gold text to gold amount
-		goldText.GetComponent<UnityEngine.UI.Text>().text = "" + gold;
-		foodText.GetComponent<UnityEngine.UI.Text>().text = "" + food;
+		if (goldText != null)
+            goldText.GetComponent<UnityEngine.UI.Text>().text = "" + gold;
 		
-		//ray from main camera
-		RaycastHit hit;
+        if (foodText != null)
+            foodText.GetComponent<UnityEngine.UI.Text>().text = "" + food;
+
+        //ray from main camera
+        RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Physics.Raycast(ray, out hit);
 				
