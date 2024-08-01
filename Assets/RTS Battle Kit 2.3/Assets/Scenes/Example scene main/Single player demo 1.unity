@@ -1711,6 +1711,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010898808796, guid: 996f201c35d57f8429b6f465362186b5,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 114000012793466558, guid: 996f201c35d57f8429b6f465362186b5,
+        type: 3}
+    - target: {fileID: 114000010898808796, guid: 996f201c35d57f8429b6f465362186b5,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: moveCameraButtonDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010898808796, guid: 996f201c35d57f8429b6f465362186b5,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Mobile, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 114667807101889002, guid: 996f201c35d57f8429b6f465362186b5,
         type: 3}
       propertyPath: unitPanel

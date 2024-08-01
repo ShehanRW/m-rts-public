@@ -75,28 +75,6 @@ public class Mobile : MonoBehaviour {
 
 				//use the move booleans to know when to move the camera
 			}
-
-			// add new experimental scene for allowing controllers - #shehan
-            else if (SceneManager.GetActiveScene().name == "SinglePlayer")
-            {
-                //Debug.Log("SinglePlayer");
-                if (moveLeft)
-                {
-                    Camera.main.transform.Translate(Vector3.right * Time.deltaTime * -CamController.movespeed);
-                }
-                if (moveRight)
-                {
-                    Camera.main.transform.Translate(Vector3.right * Time.deltaTime * CamController.movespeed);
-                }
-                if (moveUp)
-                {
-                    Camera.main.transform.Translate(Vector3.forward * Time.deltaTime * CamController.movespeed);
-                }
-                if (moveDown)
-                {
-                    Camera.main.transform.Translate(Vector3.forward * Time.deltaTime * -CamController.movespeed);
-                }
-            }
         }
 
 			//turn the buttons of when any of the menu's is active
